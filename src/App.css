@@ -1,0 +1,177 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.header {
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.header_title {
+    color: white;
+    font-size: 34px;
+    padding-top: 50px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+}
+.searchBox, .filterBox {
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filter_bar_container {
+    display: flex;
+    height: 40px;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(177, 172, 172);
+}
+.searchbar_container {
+    background-color: grey;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.searchbar_form {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.searchbar_input {
+    height: 10px;
+    padding: 5px 2px;
+    margin: 10px;
+    width: 175px;
+    font-size: 16px;
+    outline: none;
+}
+
+.searchbar_input:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    outline: none;
+}
+
+
+.search_button {
+    font-size: 10px;
+}
+
+.search_button:hover {
+    text-shadow: 2px 2px;
+}
+.book_li {
+    list-style: none;
+    display: flex;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.book_container {
+    margin: 20px;
+}
+
+.book_li:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #ededed;
+}
+
+.book_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.book_image {
+    align-self: center;
+}
+
+/* A link that has not been visited */
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+/* A link that has been visited */
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* A link that is hovered on */
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/* A link that is selected */
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.print_type_filter_form {
+    margin-right: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .filter_bar_container, .print_type_filter_form, .book_type_filter_form {
+        display: hidden;
+    }
+  }
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
